@@ -21,7 +21,7 @@ void init_graph(int argc, char **argv) {
     glPointSize(1.0f);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrtho(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT,-1,1);
+    gluOrtho2D(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT,-1,1);
 }
 
 void close_graph() {
